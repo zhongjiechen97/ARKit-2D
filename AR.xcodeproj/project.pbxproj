@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9016E382213A3F800066703 /* ghost.wav in Resources */ = {isa = PBXBuildFile; fileRef = A9016E372213A3F800066703 /* ghost.wav */; };
 		A91E0267220EBCDC006A34B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91E0266220EBCDC006A34B8 /* AppDelegate.swift */; };
 		A91E0269220EBCDC006A34B8 /* Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A91E0268220EBCDC006A34B8 /* Scene.sks */; };
 		A91E026B220EBCDC006A34B8 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91E026A220EBCDC006A34B8 /* Scene.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A9016E372213A3F800066703 /* ghost.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = ghost.wav; path = "../../../../Downloads/ARKitGameSpriteKit-master/ARSpriteKit/ghost.wav"; sourceTree = "<group>"; };
 		A91E0263220EBCDC006A34B8 /* AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A91E0266220EBCDC006A34B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A91E0268220EBCDC006A34B8 /* Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene.sks; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		A91E0265220EBCDC006A34B8 /* AR */ = {
 			isa = PBXGroup;
 			children = (
+				A9016E372213A3F800066703 /* ghost.wav */,
 				A91E0266220EBCDC006A34B8 /* AppDelegate.swift */,
 				A91E0268220EBCDC006A34B8 /* Scene.sks */,
 				A91E026A220EBCDC006A34B8 /* Scene.swift */,
@@ -237,6 +240,7 @@
 			files = (
 				A91E0269220EBCDC006A34B8 /* Scene.sks in Resources */,
 				A91E0275220EBCDD006A34B8 /* LaunchScreen.storyboard in Resources */,
+				A9016E382213A3F800066703 /* ghost.wav in Resources */,
 				A91E0272220EBCDD006A34B8 /* Assets.xcassets in Resources */,
 				A91E0270220EBCDC006A34B8 /* Main.storyboard in Resources */,
 			);
@@ -441,12 +445,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 595MHN3M3P;
 				INFOPLIST_FILE = AR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-23.AR";
+				PRODUCT_BUNDLE_IDENTIFIER = CZJAR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -458,12 +463,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 595MHN3M3P;
 				INFOPLIST_FILE = AR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-23.AR";
+				PRODUCT_BUNDLE_IDENTIFIER = CZJAR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

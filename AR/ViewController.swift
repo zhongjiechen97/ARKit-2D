@@ -15,6 +15,7 @@ class ViewController: UIViewController, ARSKViewDelegate {
     @IBOutlet var sceneView: ARSKView!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         // Set the view's delegate
@@ -24,10 +25,9 @@ class ViewController: UIViewController, ARSKViewDelegate {
         sceneView.showsFPS = true
         sceneView.showsNodeCount = true
         
-        // Load the SKScene from 'Scene.sks'
-        if let scene = SKScene(fileNamed: "Scene") {
-            sceneView.presentScene(scene)
-        }
+        let scene = Scene(size: sceneView.bounds.size)
+        scene.scaleMode = .resizeFill
+        sceneView.presentScene(scene)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -48,13 +48,21 @@ class ViewController: UIViewController, ARSKViewDelegate {
     }
     
     // MARK: - ARSKViewDelegate
+    func randomInt(min: Int, max: Int) -> Int {
+        return min + Int(arc4random_uniform(UInt32(max - min + 1)))
+    }
     
     func view(_ view: ARSKView, nodeFor anchor: ARAnchor) -> SKNode? {
         // Create and configure a node for the anchor added to the view's session.
-        let labelNode = SKLabelNode(text: "👾")
-        labelNode.horizontalAlignmentMode = .center
-        labelNode.verticalAlignmentMode = .center
-        return labelNode;
+        
+        // 该函数用于创建和配置一个结点，结果返回一个结点
+        let ghostId = randomInt(min: 1, max: 3)
+        // SKSpriteNode()会在Assets.xcassets中找到对应的图片生成结点
+        let node = SKSpriteNode(imageNamed: "huaji\(ghostId)")
+        node.name = "ghost"
+        
+        return node
+        
     }
     
     func session(_ session: ARSession, didFailWithError error: Error) {
